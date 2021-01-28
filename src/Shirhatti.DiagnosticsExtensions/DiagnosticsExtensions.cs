@@ -15,9 +15,9 @@ namespace Shirhatti.DiagnosticsExtensions
     {
         public Task OnLoadAsync(Kernel kernel)
         {
-            //Formatter.Register<DataTarget>(DataTargetFormatter.Format, "text/html");
-            //Formatter.Register<ClrAppDomain>(ClrAppDomainFormatter.Format, "text/html");
-            //Formatter.Register<ImmutableArray<ClrAppDomain>>(ClrAppDomainFormatter.Format, "text/html");
+            Formatter.Register<DataTarget>(DataTargetFormatter.Format, "text/html");
+            Formatter.Register<ClrAppDomain>(ClrAppDomainFormatter.Format, "text/html");
+            Formatter.Register<ImmutableArray<ClrAppDomain>>(ClrAppDomainFormatter.Format, "text/html");
 
             return Task.CompletedTask;
         }
