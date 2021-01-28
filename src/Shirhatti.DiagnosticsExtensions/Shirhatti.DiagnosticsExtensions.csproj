@@ -7,6 +7,18 @@
     <IsPackable>true</IsPackable>
     <PackageDescription>Diagnostics extensions for dotnet-interactive</PackageDescription>
     <NoWarn>NU5100,NU5104</NoWarn>
+    <TreatWarningsAsErrors>true</TreatWarningsAsErrors>
+    <Deterministic>true</Deterministic>
+    <IncludeSymbols>true</IncludeSymbols>
+    <SymbolPackageFormat>snupkg</SymbolPackageFormat>
+    <PublishRepositoryUrl>true</PublishRepositoryUrl>
+    <EmbedUntrackedSources>true</EmbedUntrackedSources>
+    <Determinstic>true</Determinstic>
+
+    <PackageOutputPath>$(MSBuildThisFileDirectory)../../artifacts</PackageOutputPath>
+    <License>https://github.com/shirhatti/DiagnosticsExtensions/blob/main/LICENSE</License>
+    <PackageProjectUrl>https://github.com/shirhatti/DiagnosticsExtensions</PackageProjectUrl>
+    <Authors>Sourabh Shirhatti</Authors>
   </PropertyGroup>
 
   <ItemGroup>
@@ -23,6 +35,7 @@
     <PackageReference Include="Microsoft.Diagnostics.Runtime" Version="2.0.161401" />
     <PackageReference Include="Microsoft.DotNet.Interactive.CSharp" Version="1.0.0-beta.20553.2" />
     <PackageReference Include="Microsoft.DotNet.Interactive.Formatting" Version="1.0.0-beta.20553.2" />
+    <PackageReference Include="Nerdbank.GitVersioning" Version="3.3.37" PrivateAssets="all" />
   </ItemGroup>
   
 </Project>

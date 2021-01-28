@@ -5,9 +5,5 @@
     "^refs/heads/main$",
     "^refs/heads/develop$",
     "^refs/heads/v\\d+\\.\\d+$"
-  ],
-  "cloudBuild": {
-    "buildNumber": {
-        "enabled": true
-    }
+  ]
 }
