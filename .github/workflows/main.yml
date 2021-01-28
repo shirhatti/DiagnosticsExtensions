@@ -18,6 +18,7 @@ jobs:
         dotnet-version: 5.0.102
     - name: Build
       run: |
+        pwd
         dotnet restore
         dotnet build --configuration Release --no-restore
         dotnet pack --no-build --configuration Release /bl
